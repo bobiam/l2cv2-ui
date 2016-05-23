@@ -37,6 +37,12 @@
 
         <div class="col-md-3 patternbox">
           <div class="buttonbox">
+            <button type="button" class="btn btn-primary" onclick="nextPattern();">Next Pattern</button>
+          </div>
+        </div>
+
+        <div class="col-md-3 patternbox">
+          <div class="buttonbox">
             <button type="button" class="btn btn-primary" onclick="$('#waitModal').modal();">Wait</button>
           </div>
         </div>
@@ -53,11 +59,6 @@
           </div>
         </div>
 
-        <div class="col-md-3 patternbox">
-          <div class="buttonbox">
-            <button type="button" class="btn btn-primary" onclick="$('#Modal').modal();">Foreground Color 2</button>
-          </div>
-        </div>
 
       </div>
 
@@ -77,7 +78,7 @@
 
         <div class="col-md-3 patternbox">
           <div class="buttonbox">
-
+            <button type="button" class="btn btn-primary" onclick="$('#foreground2Modal').modal();">Foreground Color 2</button>
           </div>
         </div>
 
@@ -93,28 +94,115 @@
 
         <div class="col-md-3 patternbox">
           <div class="patternpic">
-            <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/steamboat.jpg" onclick="$('#patternModal').modal();" />
+            <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/ants.gif" onclick="showPattern(8);" />
           </div>
         </div>
 
         <div class="col-md-3 patternbox">
           <div class="patternpic">
-            <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/steamboat.jpg" onclick="$('#patternModal').modal();" />
+            <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/blendMe.gif" onclick="showPattern(2);" />
           </div>
         </div>
 
         <div class="col-md-3 patternbox">
           <div class="patternpic">
-            <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/steamboat.jpg" onclick="$('#patternModal').modal();" />
+            <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/bpm.gif" onclick="showPattern(14);" />
           </div>
         </div>
 
         <div class="col-md-3 patternbox">
           <div class="patternpic">
-            <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/steamboat.jpg" onclick="$('#patternModal').modal();" />
+            <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/chase.gif" onclick="showPattern(0);" />
           </div>
         </div>
       </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-3 patternbox">
+        <div class="patternpic">
+          <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/confetti.gif" onclick="showPattern(11);" />
+        </div>
+      </div>
+
+      <div class="col-md-3 patternbox">
+        <div class="patternpic">
+          <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/juggle.gif" onclick="showPattern(13);" />
+        </div>
+      </div>
+
+      <div class="col-md-3 patternbox">
+        <div class="patternpic">
+          <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/lightning.gif" onclick="showPattern(4);" />
+        </div>
+      </div>
+
+      <div class="col-md-3 patternbox">
+        <div class="patternpic">
+          <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/one_sin.gif" onclick="showPattern(3);" />
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-3 patternbox">
+        <div class="patternpic">
+          <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/paparockzi.gif" onclick="showPattern(7);" />
+        </div>
+      </div>
+
+      <div class="col-md-3 patternbox">
+        <div class="patternpic">
+          <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/rainbow.gif" onclick="showPattern(15);" />
+        </div>
+      </div>
+
+      <div class="col-md-3 patternbox">
+        <div class="patternpic">
+          <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/rainbowWithGlitter.gif" onclick="showPattern(16);" />
+        </div>
+      </div>
+
+      <div class="col-md-3 patternbox">
+        <div class="patternpic">
+          <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/randBlocks.gif" onclick="showPattern(9);" />
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-3 patternbox">
+        <div class="patternpic">
+          <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/ripple.gif" onclick="showPattern(5);" />
+        </div>
+      </div>
+
+      <div class="col-md-3 patternbox">
+        <div class="patternpic">
+          <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/sinlon.gif" onclick="showPattern(12);" />
+        </div>
+      </div>
+
+      <div class="col-md-3 patternbox">
+        <div class="patternpic">
+          <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/two_chase.gif" onclick="showPattern(6);" />
+        </div>
+      </div>
+
+      <div class="col-md-3 patternbox">
+        <div class="patternpic">
+          <img class="center-block" style="margin-left:auto;margin-right:auto;width:100px !important;height:100px !important;" src="static/img/wipe.gif" onclick="showPattern(1);" />
+        </div>
+      </div>
+    </div>
 
     </div>
 
@@ -148,7 +236,6 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Run</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -194,7 +281,6 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Run</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -240,7 +326,6 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Run</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -276,11 +361,93 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Run</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+
+    <!-- Frequency Modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="frequencyModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Frequency</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-0 patternbox">
+                <div class="row">
+                  <div class="col-md-2">&nbsp;</div>
+                  <div class="col-md-2">Frequency:</div>
+                  <div class="col-md-2"><input type="text" id="frequency" data-provide="slider" data-slider-min="5" data-slider-max="1000" data-slider-step="1" data-slider-value="1" data-slider-tooltip="hide" data-slider-on/></div>
+                </div>
+              </div>
+
+              <div class="col-md-0 patternbox">
+                <div class="row">
+                  <div class="col-md-0">
+                    <div id="colorpicker"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <!-- ForeGround Modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="foreground2Modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Foreground 2 Color</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row" id="fg2color">
+              <div class="col-md-0 patternbox">
+                <div class="row">
+                  <div class="col-md-2">&nbsp;</div>
+                  <div class="col-md-2">Red:</div>
+                  <div class="col-md-2"><input type="text" id="rgb2_r" data-provide="slider" data-slider-min="1" data-slider-max="255" data-slider-step="1" data-slider-value="1" data-slider-tooltip="hide" data-slider-on/></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2">&nbsp;</div>
+                  <div class="col-md-2">Green:</div>
+                  <div class="col-md-2"><input type="text" id="rgb2_g" data-provide="slider" data-slider-min="1" data-slider-max="255" data-slider-step="1" data-slider-value="1" data-slider-tooltip="hide" /></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2">&nbsp;</div>
+                  <div class="col-md-2">Blue:</div>
+                  <div class="col-md-2"><input type="text" id="rgb2_b" data-provide="slider" data-slider-min="1" data-slider-max="255" data-slider-step="1" data-slider-value="1" data-slider-tooltip="hide" /></div>
+                </div>
+              </div>
+
+              <div class="col-md-0 patternbox">
+                <div class="row">
+                  <div class="col-md-0">
+                    <div id="colorpicker"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="static/js/jquery.min.js"></script>
@@ -289,6 +456,33 @@
     <script src="static/js/bootstrap-slider.min.js"></script>
 
     <script>
+
+      function nextPattern() {
+
+         $.ajax({
+           url: '/send_command/',
+           dataType: 'json',
+           data: {'instring':'p'},
+           success: function(data) {
+
+           },
+        });
+
+      }
+
+      function showPattern(pat) {
+
+         $.ajax({
+           url: '/send_command/',
+           dataType: 'json',
+           data: {'instring':'q ' + pat},
+           success: function(data) {
+
+           },
+        });
+
+      }
+
 
       $( document ).ready(function() {
 
@@ -330,6 +524,26 @@
         var bg_g = $('#bg_g').slider().on('slideStop', bgRGBChange).data('slider');
         var bg_b = $('#bg_b').slider().on('slideStop', bgRGBChange).data('slider');
 
+        // Foreground
+        var fg2RGBChange = function() {
+      	   $('#fg2color').css('background', 'rgb('+fg2_r.getValue()+','+fg2_g.getValue()+','+fg2_b.getValue()+')')
+
+           $.ajax({
+             url: '/send_command/',
+             dataType: 'json',
+             data: {'instring':'g ' + fg2_r.getValue()+' '+fg2_g.getValue()+' '+fg2_b.getValue()},
+             success: function(data) {
+
+             },
+          });
+
+        };
+
+        var fg2_r = $('#rgb2_r').slider().on('slideStop', fg2RGBChange).data('slider');
+        var fg2_g = $('#rgb2_g').slider().on('slideStop', fg2RGBChange).data('slider');
+        var fg2_b = $('#rgb2_b').slider().on('slideStop', fg2RGBChange).data('slider');
+
+
         // Wait
         var waitChange = function() {
 
@@ -347,7 +561,7 @@
         var wait_val = $('#wait_ms').slider().on('slideStop', waitChange).data('slider');
 
         // Brightness
-        var brightnesChange = function() {
+        var brightnessChange = function() {
 
            $.ajax({
              url: '/send_command/',
@@ -361,6 +575,22 @@
         };
 
         var brightness_val = $('#brightness_ms').slider().on('slideStop', brightnessChange).data('slider');
+
+        // Brightness
+        var frequencyChange = function() {
+
+           $.ajax({
+             url: '/send_command/',
+             dataType: 'json',
+             data: {'instring':'r ' + frequency_val.getValue()},
+             success: function(data) {
+
+             },
+          });
+
+        };
+
+        var frequency_val = $('#frequency').slider().on('slideStop', frequencyChange).data('slider');
 
       });
 
